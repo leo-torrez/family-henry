@@ -1,0 +1,51 @@
+<div class="wrapper">
+  <div class="wrapper-login">
+    <div class="wrapper-login-box">
+      <div class="col-md-7">
+        <span class="wrapper-login-image"></span>
+      </div>
+      <div class="col-md-5">
+        <div>
+          <p class="login-texto">
+            <span class="login-texto-destaque">Hey</span>, <br />
+            efetue seu login.
+            <fa-icon [icon]="['far', 'hand-peace']"></fa-icon>
+          </p>
+        </div>
+        <div class="input-group mb-3 box-input-icone-texto">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="nomeUsuario"
+              ><fa-icon [icon]="['fa', 'user']"></fa-icon
+            ></span>
+          </div>
+          <input
+            type="text"
+            class="form-control input-icone-texto"
+            placeholder="usuário"
+            aria-label="usuário"
+            aria-describedby="nomeUsuario"
+          />
+        </div>
+
+        <div class="input-group mb-3 box-input-icone-texto">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="senhaUsuario">
+              <fa-icon [icon]="['fa', 'envelope']"></fa-icon>
+            </span>
+          </div>
+          <input
+            type="password"
+            class="form-control input-icone-texto"
+            placeholder="senha"
+            aria-label="senha"
+            aria-describedby="senhaUsuario"
+          />
+        </div>
+
+        <div class="button-login">
+          <app-button-success></app-button-success>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
